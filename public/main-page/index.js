@@ -4,10 +4,8 @@ import {
   clickableLogo,
   setToLoggedIn,
   logInOut,
-} from "./utils/login-functions.mjs";
-import fetchPosts from "./utils/main-fetch-function.mjs";
-
-
+} from "../utils/login-functions.mjs";
+import fetchPosts from "../utils/main-fetch-function.mjs";
 
 /////////////// Clickable logo, takes to homepage ////////////////
 
@@ -71,4 +69,3 @@ function sort() {
     });
   }
 }
-

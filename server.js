@@ -356,7 +356,7 @@ app.get('/users/:username', (req, res) => {
 //////////////////////////// SENDING THE HTML FILES /////////////////////////////////////
 
 app.get('/main', (req, res) => {
-    res.sendFile(__dirname + '/public/main.html');
+    res.sendFile(__dirname + '/public/main-page/main.html');
 })
 
 app.get('/create_post', (req, res) => {
