@@ -28,7 +28,7 @@ sort();
 export function clickableLogo() { // click on the logo takes the user to the homepage
     let logo = document.querySelector('#logo img');
     logo.addEventListener('click', () => {
-    window.location.href = 'http://localhost:3000/space';
+    window.location.href = 'http://localhost:3000/main';
     })
 }
 
@@ -39,7 +39,7 @@ export function setToLoggedIn() { // checks if any user is logged in; if so layo
 
     if(localStorage.getItem('username')) {
         loginBtn.textContent = 'Log Out';
-        avatar.setAttribute('src', 'img/avatar.png');
+        avatar.setAttribute('src', '../assets/avatar.png');
         username.textContent = localStorage.getItem('username');
         fetchVoteCount();
     }
@@ -86,7 +86,7 @@ export function logOut() { // logs user out, handles the layout
         loginBtn.textContent = 'Log In';
         username.textContent = '';
         voteCount.textContent = '';
-        avatar.setAttribute('src', 'img/avatar1.png')
+        avatar.setAttribute('src', '../assets/avatar1.png')
 }
 
 function createPost() { // creates basic structure of a post
@@ -220,9 +220,9 @@ function fetchPosts(url) { // gets all the posts and sets all the functions, inc
                 /////////////// Setting the upvoted/downvoted icons //////////////////////
 
                 if(data.posts[i].vote == 1) {
-                    upvote.style.background = `url('img/upvoted.png')`
+                    upvote.style.background = `url('../assets/upvoted.png')`
                 } else if(data.posts[i].vote == -1) {
-                    downvote.style.background = `url('img/downvoted.png')`
+                    downvote.style.background = `url('../assets/downvoted.png')`
                 }
 
                 //////////////////// Upvoting a post //////////////////////////////////
@@ -362,7 +362,7 @@ export function fetchWithoutUsername(url, method, values) { // sends request whe
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        window.location.href = 'http://localhost:3000/space';
+        window.location.href = 'http://localhost:3000/main';
     })
     .catch(error => {
         console.error('Error:', error);
@@ -381,7 +381,7 @@ export function fetchWithUsername(url, method, values) { // sends request when a
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        window.location.href = 'http://localhost:3000/space';
+        window.location.href = 'http://localhost:3000/main';
     })
     .catch(error => {
         console.error('Error:', error);

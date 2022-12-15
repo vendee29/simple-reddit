@@ -24,7 +24,7 @@ loginForm.addEventListener('submit', (event) => {
     .then(data => {
         console.log('Success:', data.username);
         localStorage.setItem('username', data.username);
-        window.location.assign('http://localhost:3000/space');
+        window.location.assign('http://localhost:3000/main');
     })
     .catch(error => {
         console.error('Error:', error);

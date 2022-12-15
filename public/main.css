@@ -94,7 +94,7 @@ header {
 #header-background {
     margin-top: 50px;
     height: 210px;
-    background: url('img/space-background.jpg');
+    background: url('../assets/space-background.jpg');
 }
 
 h1 {
@@ -133,7 +133,7 @@ h1 {
     content: '';
     width: 70px;
     height: 70px;
-    background: url('img/reddit_spaceman_logo.png');
+    background: url('../assets/reddit_spaceman_logo.png');
     background-size: 100%;
     position: absolute;
     margin:-18px 0 0 -90px;
@@ -205,14 +205,14 @@ main {
 .upvote {
     width: 14px;
     height: 14px;
-    background: url('img/upvote.png');
+    background: url('../assets/upvote.png');
     filter: brightness(0.90);
 }
 
 .downvote {
     width: 14px;
     height: 14px;
-    background: url('img/downvote.png');
+    background: url('../assets/downvote.png');
     filter: brightness(0.90);
 }
 
@@ -222,7 +222,7 @@ main {
 }
 
 .upvote:active {
-    background: url('img/upvoted.png');
+    background: url('../assets/upvoted.png');
 }
 
 .downvote:hover {
@@ -231,7 +231,7 @@ main {
 }
 
 .downvote:active {
-    background: url('img/downvoted.png');
+    background: url('../assets/downvoted.png');
 }
 
 .post-article {
