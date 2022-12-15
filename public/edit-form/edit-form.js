@@ -1,8 +1,13 @@
 'use strict';
 
-import { clickableLogo, setToLoggedIn, logInOut, fetchWithUsername} from '../../../reddit/public/index.js';
+import { clickableLogo, setToLoggedIn, logInOut } from "../utils/login-functions";
+import { fetchWithUsername } from "../utils/fetch-functions";
 
 let editForm = document.querySelector('.edit-form');
+
+clickableLogo();
+setToLoggedIn();
+logInOut();
 
 //////////////// Pre-filling the data of the edited post ///////////////////////
 

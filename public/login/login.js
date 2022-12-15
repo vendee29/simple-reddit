@@ -1,6 +1,8 @@
 'use strict';
 
-import { clickableLogo } from '../../../reddit/public/index.js';
+import { clickableLogo } from "../utils/login-functions";
+
+clickableLogo();
 
 const loginForm = document.querySelector('.login-form');
 

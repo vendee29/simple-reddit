@@ -1,6 +1,11 @@
 'use strict';
 
-import { clickableLogo, setToLoggedIn, logInOut, fetchWithUsername, fetchWithoutUsername } from '../../../reddit/public/index.js';
+import { clickableLogo, setToLoggedIn, logInOut } from "../utils/login-functions";
+import { fetchWithUsername, fetchWithoutUsername } from "../utils/fetch-functions";
+
+clickableLogo();
+setToLoggedIn();
+logInOut();
 
 let postForm = document.querySelector('.post-form');
 

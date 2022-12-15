@@ -71,7 +71,7 @@ header {
 #header-background {
     margin-top: 50px;
     height: 210px;
-    background: url('img/space-background.jpg');
+    background: url('../assets/space-background.jpg');
 }
 
 h1 {
