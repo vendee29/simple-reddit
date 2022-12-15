@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script defer src="login.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">  
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div id="logo">
+                <img src="img/reddit_logo.png" alt="logo">
+            </div>
+        </div>
+        <div id="header-background">
+            <h1>SPACE</h1>
+        </div>
+    </header>
+    <div class="content">
+        <main>
+            <h2>Log In</h2>
+            <p>By continuing, you agree are setting up a Reddit account and agree to our User Agreement and Privacy Policy.</p>
+            <form class="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" maxlength="15" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+
+                <button type="submit">Log In</button>
+            </form>
+        </main>
+</body>
+</html>
