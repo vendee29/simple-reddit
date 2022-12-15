@@ -356,19 +356,19 @@ app.get('/users/:username', (req, res) => {
 //////////////////////////// SENDING THE HTML FILES /////////////////////////////////////
 
 app.get('/space', (req, res) => {
-    res.sendFile(__dirname + '/public/main.html');
+    res.sendFile(__dirname + '../public/main-page/main.html');
 })
 
 app.get('/create_post', (req, res) => {
-    res.sendFile(__dirname + '/public/post-form.html');
+    res.sendFile(__dirname + '../public/post-form/post-form.html');
 })
 
 app.get('/edit_post', (req, res) => {
-    res.sendFile(__dirname + '/public/edit-form.html');
+    res.sendFile(__dirname + '../public/edit-form/edit-form.html');
 })
 
 app.get('/login', (req, res) => {
-    res.sendFile(__dirname + '/public/login.html');
+    res.sendFile(__dirname + '../public/login/login.html');
 })
 
 // PORT
