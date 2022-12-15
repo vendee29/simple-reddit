@@ -10,13 +10,16 @@ A JS attempt at a reddit page built with Express.js and mysql.
 + Modifying and removing own or anonymous posts for logged in users
 + Modifying and removing anonymous posts for not logged in users
 
-## Sreenshots
+## Screenshots
 
 ### Main page
+<img src="https://github.com/vendee29/simple-reddit/blob/main/public/assets/screenshots/r_main-page.png" width="600"/>
 
 ### Login page
+<img src="https://github.com/vendee29/simple-reddit/blob/main/public/assets/screenshots/r_login.png" width="600"/>
 
 ### Create post form
+<img src="https://github.com/vendee29/simple-reddit/blob/main/public/assets/screenshots/r_create_post.png" width="600"/>
 
 ### Edit post form
-
+<img src="https://github.com/vendee29/simple-reddit/blob/main/public/assets/screenshots/r_edit_post.png" width="600"/>
