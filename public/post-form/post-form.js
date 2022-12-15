@@ -1,7 +1,7 @@
 'use strict';
 
-import { clickableLogo, setToLoggedIn, logInOut } from "../utils/login-functions";
-import { fetchWithUsername, fetchWithoutUsername } from "../utils/fetch-functions";
+import { clickableLogo, setToLoggedIn, logInOut } from "../utils/login-functions.mjs";
+import { fetchWithUsername, fetchWithoutUsername } from "../utils/fetch-functions.mjs";
 
 clickableLogo();
 setToLoggedIn();

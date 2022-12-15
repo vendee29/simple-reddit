@@ -1,6 +1,6 @@
 'use strict';
 
-import { clickableLogo } from "../utils/login-functions";
+import { clickableLogo } from "../utils/login-functions.mjs";
 
 clickableLogo();
 

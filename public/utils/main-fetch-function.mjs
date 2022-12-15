@@ -1,10 +1,16 @@
 'use strict';
 
-import { createPost } from "./post-functions";
-import { getRelativeTime } from "./helper-functions";
+import { createPost } from "./post-functions.mjs";
+import { getRelativeTime } from "./helper-functions.mjs";
 
 export default function fetchPosts(url) { // gets all the posts and sets all the functions, incl. voting, modifying and removing
 
+    let loggedUser = localStorage.getItem("username")
+  ? localStorage.getItem("username")
+  : null;
+
+  console.log("Logged User: " + loggedUser);
+  
     fetch(url, {
         method: 'GET',
         headers: {

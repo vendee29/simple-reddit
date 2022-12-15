@@ -1,7 +1,7 @@
 'use strict';
 
-import { clickableLogo, setToLoggedIn, logInOut } from "../utils/login-functions";
-import { fetchWithUsername } from "../utils/fetch-functions";
+import { clickableLogo, setToLoggedIn, logInOut } from "../utils/login-functions.mjs";
+import { fetchWithUsername } from "../utils/fetch-functions.mjs";
 
 let editForm = document.querySelector('.edit-form');
 
