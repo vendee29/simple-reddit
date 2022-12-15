@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <script defer src="post-form.js" type="module"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="post-form.css">  
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div id="logo">
+                <img src="img/reddit_logo.png" alt="logo">
+                </div>
+            <div class="header-top-right">
+                <button class="login">Log In</button>
+                <div class="user-container">
+                    <img src="img/avatar1.png" alt="avatar">
+                    <div class="user">
+                        <div class="username"></div>
+                        <div class="vote-count"></div>
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div id="header-background">
+            <h1>SPACE</h1>
+        </div>
+    </header>
+    <div class="content">
+        <main>
+            <h2>Create a post</h2>
+            <div>r/space</div>
+            <p>Welcome to r/space! Please read the rules and check for previous submissions before posting. If you live in the US and saw a shape similar to this https://redd.it/9o59pt in the sky it was the exhaust from a recent Falcon 9 rocket launch.</p>
+            <form class="post-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="url">URL</label>
+                <input type="url" id="url" name="url" required>
+
+                <button type="submit">Post</button>
+            </form>
+        </main>
+</body>
+</html>
